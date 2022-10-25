@@ -50,19 +50,6 @@ p {
   margin-right: 200px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-
-  /* height: 404px; */
-}
-
-.flex-element {
-  width: 370px;
-  margin: 15px;
-}
-
 /* если ширина контейнера увеличиться, ширина элемента подстроиться авто */
 /* .flex-element {
   width: calc((100% - 60px) / 3);
@@ -444,9 +431,23 @@ p {
 /* Main */
 
 .main-portfolio {
+  width: 1600px;
 }
 
 .nav-portfolio {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.nav-buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-buttons .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .buttons-portfolio {
@@ -455,6 +456,9 @@ p {
   line-height: 1.63;
   letter-spacing: 0.03em;
   background: #f5f4fa;
+
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .buttons-portfolio:hover,
@@ -467,11 +471,28 @@ p {
   background: var(--accent-color);
 }
 
+.project-portfolio {
+}
+
 .list-project {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.flex-element {
+  width: 370px;
+  margin: 15px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .header-project {
@@ -480,4 +501,16 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.text-project {
+  padding-top: 4px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
